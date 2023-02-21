@@ -110,10 +110,10 @@ const Monitoring = (props) => {
       const interval = setInterval(async () => {
         const data = await fetchAccount(currentlyActive)
         setUserBalance(data)
-        console.log('fetched balance at ' + new Date().toLocaleTimeString())
+        //console.log('fetched balance at ' + new Date().toLocaleTimeString())
         const data2 = await fetchAssets(currentlyActive)
         setAssets(data2)
-        console.log('fetched assets at ' + new Date().toLocaleTimeString())
+        //console.log('fetched assets at ' + new Date().toLocaleTimeString())
       }, 300000)
 
       return () => clearInterval(interval)
