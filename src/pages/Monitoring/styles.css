@@ -1,0 +1,452 @@
+#light .container {
+  font-size: 16px;
+  padding: 15px;
+  max-width: 1000px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 100px;
+}
+
+#dark .container {
+  font-size: 16px;
+  padding: 15px;
+  max-width: 1000px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #333335;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 100px;
+}
+
+#light .container .monitoring-accounts {
+  padding: 15px;
+  background-color: #f3ebf6;
+  border-radius: 0.5rem;
+  border: solid 1px grey;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-height: 300px;
+}
+
+#dark .container .monitoring-accounts {
+  padding: 15px;
+  background-color: #c0bfc0;
+  border-radius: 0.5rem;
+  border: solid 1px grey;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-height: 300px;
+}
+
+.monitoring-accounts .head {
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.monitoring-accounts input {
+  height: 2rem;
+  padding: 10px;
+  border-radius: 30px;
+  border: 0.5px solid gray;
+  text-align: center;
+}
+
+.monitoring-accounts .buttons {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons .add {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  background: green;
+  border-radius: 0.5rem;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.buttons .remove-current {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: red;
+  border-radius: 0.5rem;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.buttons .remove-current:disabled {
+  cursor: unset;
+  background-color: #868686;
+}
+
+.buttons .remove-all {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  background: red;
+  border-radius: 0.5rem;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.container .added-accounts {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#light .added-accounts .account {
+  font-size: 12px;
+  background-color: white;
+  padding: 7px;
+  border-radius: 30px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+#dark .added-accounts .account {
+  color: black;
+  font-size: 12px;
+  background-color: white;
+  padding: 7px;
+  border-radius: 30px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.added-accounts .account-active {
+  font-size: 12px;
+  color: white;
+  background-color: #93aeef;
+  padding: 7px;
+  border-radius: 30px;
+  border: 1px solid #93aeef;
+  cursor: pointer;
+}
+
+#light .container .display-added-account {
+  font-size: 13px;
+  background-color: #f3ebf6;
+  border-radius: 0.5rem;
+  padding: 15px;
+  font-size: 16px;
+  display: flex;
+  width: 300px;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px grey;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#dark .container .display-added-account {
+  font-size: 13px;
+  background-color: #c0bfc0;
+  border-radius: 0.5rem;
+  padding: 15px;
+  font-size: 16px;
+  display: flex;
+  width: 300px;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px grey;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.display-added-account .account-head {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border-radius: 30px;
+  background-color: #93aeef;
+}
+
+.display-added-account p {
+  font-size: 13px;
+  padding: 5px;
+  margin: 3px;
+}
+
+#light .assets {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  max-width: 1280px;
+  font-size: 13px;
+  height: 100%;
+  max-height: 420px;
+  overflow-y: auto;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#dark .assets {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2e2cbd;
+  max-width: 1280px;
+  font-size: 13px;
+  height: 100%;
+  max-height: 420px;
+  overflow-y: auto;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.assets .asset {
+  border: 1px dashed grey;
+}
+
+#light table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #f3ebf6;
+}
+
+#dark table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #c0bfc0;
+  border-color: #2e2cbd;
+}
+
+thead th {
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+#light th {
+  background-color: #e20c9b;
+  padding: 8px 15px;
+  text-align: center;
+}
+
+#dark th {
+  background-color: #2e2cbd;
+  padding: 8px 15px;
+  text-align: center;
+}
+
+td {
+  padding: 8px 15px;
+  text-align: center;
+}
+
+/* .asset:hover {
+  background-color: #93aeef;
+} */
+
+/* .template-id {
+  width: 160px;
+}
+
+.level {
+  width: 60px;
+}
+
+.mission-name {
+  width: 160px;
+}
+
+.missions-completed {
+  width: 90px;
+}
+
+.mission-available-at {
+  width: 95px;
+}
+
+.mission-cost-gold {
+  width: 95px;
+}
+
+.mission-cost-wax {
+  width: 95px;
+}
+
+.mission-reward {
+  width: 120px;
+} */
+
+#light tfoot {
+  position: sticky;
+  bottom: 0;
+  color: white;
+  font-weight: bold;
+  background-color: #e20c9b;
+}
+
+#dark tfoot {
+  position: sticky;
+  bottom: 0;
+  color: white;
+  font-weight: bold;
+  background-color: #2e2cbd;
+}
+
+/* Set font size and max width for small screens */
+@media (max-width: 768px) {
+  .container {
+    font-size: 14px;
+    max-width: 100%;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .container .monitoring-accounts {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container .added-accounts {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container .display-added-account {
+    width: 100%;
+  }
+
+  .assets {
+    max-height: none;
+    overflow-y: unset;
+  }
+
+  .template-id,
+  .level,
+  .mission-name,
+  .missions-completed,
+  .mission-available-at,
+  .mission-cost-gold,
+  .mission-cost-wax,
+  .mission-reward {
+    width: auto;
+  }
+}
+
+/* Adjust font size and padding for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    font-size: 15px;
+    max-width: 100%;
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .container .monitoring-accounts {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container .added-accounts {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container .display-added-account {
+    width: 100%;
+  }
+
+  .assets {
+    max-height: none;
+    overflow-y: unset;
+  }
+
+  .template-id,
+  .level,
+  .mission-name,
+  .missions-completed,
+  .mission-available-at,
+  .mission-cost-gold,
+  .mission-cost-wax,
+  .mission-reward {
+    padding: 10px;
+  }
+}
+
+/* Restore original styles for large screens */
+@media (min-width: 1025px) {
+  .container {
+    font-size: 16px;
+    max-width: 1000px;
+    gap: 100px;
+    flex-direction: row;
+  }
+
+  .container .monitoring-accounts {
+    width: 400px;
+    margin-bottom: 0;
+  }
+
+  .container .added-accounts {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .container .display-added-account {
+    width: 300px;
+  }
+
+  .assets {
+    max-height: 420px;
+    overflow-y: auto;
+  }
+
+  .mission-name,
+  .missions-completed,
+  .mission-time-left {
+    padding: 8px 15px;
+    width: auto;
+  }
+
+  .template-id,
+  .level {
+    width: 60px;
+  }
+
+  .missions-completed,
+  .mission-reward,
+  .mission-cost-wax {
+    width: 90px;
+  }
+
+  .mission-cost-gold {
+    width: 95px;
+  }
+
+  .mission-pure-profit {
+    width: 110px;
+  }
+
+  .mission-name {
+    width: 145px;
+  }
+}

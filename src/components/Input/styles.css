@@ -1,0 +1,13 @@
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.input__field {
+  font-size: 14px;
+  border-radius: 30px;
+  border: 1px solid grey;
+  padding: 5px;
+  text-align: center;
+  width: 60px;
+}

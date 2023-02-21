@@ -1,0 +1,19 @@
+#light .footer {
+  color: #e20c9b;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  padding: 20px;
+  background-color: #cfd3db;
+  font-size: 16px;
+}
+
+#dark .footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  padding: 20px;
+  background-color: #141414;
+  font-size: 16px;
+}
