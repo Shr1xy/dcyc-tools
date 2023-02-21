@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import dcycegg from '../../images/dcyc-egg.png'
-import dcycgold from '../../images/dcyc-gold.png'
-import wax from '../../images/wax.png'
-import light from '../../images/light-on.png'
-import dark from '../../images/light-off.png'
-import '../NavBar/styles.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import dcycegg from "../../images/dcyc-egg.png";
+import dcycgold from "../../images/dcyc-gold.png";
+import wax from "../../images/wax.png";
+import light from "../../images/light-on.png";
+import dark from "../../images/light-off.png";
+import "../NavBar/styles.css";
 
 const NavBar = (props) => {
   return (
@@ -47,7 +47,11 @@ const NavBar = (props) => {
             <div className="navbar-end">
               <div>
                 <button className="navbar-darklightmode" onClick={props.toggle}>
-                  {props.theme === 'light' ? <img src={dark} alt="light-off" /> : <img src={light} alt="light-on" />}
+                  {props.theme === "light" ? (
+                    <img src={dark} alt="light-off" />
+                  ) : (
+                    <img src={light} alt="light-on" />
+                  )}
                 </button>
               </div>
             </div>
@@ -59,7 +63,7 @@ const NavBar = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
