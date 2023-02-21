@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Monitoring/index'
+import Monitoring from './pages/Monitoring/index'
 //import Bot from './pages/Bot/index'
 import Calculator from './pages/Calculator/index'
 import NavBar from './components/NavBar/index'
@@ -48,7 +48,7 @@ function App() {
           <NavBar toggle={toggleTheme} theme={theme} eggPrice={data?.price.toFixed(5) ?? 0} eggGoldRatio={data?.ratio.toFixed(3) ?? 0} />
           <main className="main">
             <Routes>
-              <Route path="/dcyc-tools" element={<Home eggPrice={data?.price.toFixed(5) ?? 0} eggGoldRatio={data?.ratio.toFixed(3) ?? 0} />} />
+              <Route path="/dcyc-tools" element={<Monitoring eggPrice={data?.price.toFixed(5) ?? 0} eggGoldRatio={data?.ratio.toFixed(3) ?? 0} />} />
               {/* <Route path="/bot" element={<Bot />} /> */}
               <Route path="/calculator" element={<Calculator eggPrice={data?.price.toFixed(5) ?? 0} eggGoldRatio={data?.ratio.toFixed(3) ?? 0} />} />
             </Routes>
