@@ -1,6 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../NavBar/styles.css'
+import dcycegg from '../../images/dcyc-egg.png'
+import dcycgold from '../../images/dcyc-gold.png'
+import wax from '../../images/wax.png'
+import light from '../../images/light-on.png'
+import dark from '../../images/light-off.png'
 
 const NavBar = (props) => {
   return (
@@ -26,23 +31,23 @@ const NavBar = (props) => {
         <div className="navbar-prices">
           <div className="navbar-prices-ratio">
             <div className="navbar-prices-ratio-images">
-              <img src="./images/dcyc-gold.png" alt="dcyc-gold" />
+              <img src={dcycgold} alt="dcyc-gold" />
               <span className="ratio-images-span">/</span>
-              <img src="./images/dcyc-egg.png" alt="dcyc-egg" />
+              <img src={dcycegg} alt="dcyc-egg" />
             </div>
             <div className="navbar-prices-ratio"> {props.eggGoldRatio}</div>
           </div>
           <div className="navbar-prices-eggprice">
             <div className="navbar-prices-eggprice-images">
-              <img src="./images/dcyc-egg.png" alt="dcyc-egg" />
+              <img src={dcycegg} alt="dcyc-egg" />
               <span className="eggprice-images-span">/</span>
-              <img src="./images/wax.png" alt="wax" />
+              <img src={wax} alt="wax" />
             </div>
             <div className="navbar-prices-eggprice"> {props.eggPrice}</div>
             <div className="navbar-end">
               <div>
                 <button className="navbar-darklightmode" onClick={props.toggle}>
-                  {props.theme === 'light' ? <img src="./images/light-off.png" alt="light-off" /> : <img src="./images/light-on.png" alt="light-on" />}
+                  {props.theme === 'light' ? <img src={dark} alt="light-off" /> : <img src={light} alt="light-on" />}
                 </button>
               </div>
             </div>
