@@ -8,7 +8,7 @@ const NavBar = (props) => {
       <div className="navbar-component-sized">
         <div className="navbar-links">
           <div>
-            <Link to="/" className="navbar-links-home">
+            <Link to="/dcyc-tools" className="navbar-links-home">
               Monitoring
             </Link>
           </div>
