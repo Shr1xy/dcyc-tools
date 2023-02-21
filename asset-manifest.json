@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dcyc-tools/static/css/main.efe21190.css",
+    "main.js": "/dcyc-tools/static/js/main.709452d5.js",
+    "index.html": "/dcyc-tools/index.html",
+    "main.efe21190.css.map": "/dcyc-tools/static/css/main.efe21190.css.map",
+    "main.709452d5.js.map": "/dcyc-tools/static/js/main.709452d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efe21190.css",
+    "static/js/main.709452d5.js"
+  ]
+}
