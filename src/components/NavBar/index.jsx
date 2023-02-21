@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../NavBar/styles.css'
 import dcycegg from '../../images/dcyc-egg.png'
 import dcycgold from '../../images/dcyc-gold.png'
 import wax from '../../images/wax.png'
 import light from '../../images/light-on.png'
 import dark from '../../images/light-off.png'
+import '../NavBar/styles.css'
 
 const NavBar = (props) => {
   return (
@@ -13,7 +13,7 @@ const NavBar = (props) => {
       <div className="navbar-component-sized">
         <div className="navbar-links">
           <div>
-            <Link to="/dcyc-tools" className="navbar-links-home">
+            <Link to="/" className="navbar-links-home">
               Monitoring
             </Link>
           </div>

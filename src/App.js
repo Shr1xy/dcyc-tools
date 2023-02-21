@@ -48,7 +48,7 @@ function App() {
           <NavBar toggle={toggleTheme} theme={theme} eggPrice={data?.price.toFixed(5) ?? 0} eggGoldRatio={data?.ratio.toFixed(3) ?? 0} />
           <main className="main">
             <Routes>
-              <Route path="/dcyc-tools" element={<Monitoring eggPrice={data?.price.toFixed(5) ?? 0} eggGoldRatio={data?.ratio.toFixed(3) ?? 0} />} />
+              <Route path="/" element={<Monitoring eggPrice={data?.price.toFixed(5) ?? 0} eggGoldRatio={data?.ratio.toFixed(3) ?? 0} />} />
               {/* <Route path="/bot" element={<Bot />} /> */}
               <Route path="/calculator" element={<Calculator eggPrice={data?.price.toFixed(5) ?? 0} eggGoldRatio={data?.ratio.toFixed(3) ?? 0} />} />
             </Routes>
