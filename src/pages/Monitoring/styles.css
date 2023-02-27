@@ -227,7 +227,7 @@
 #light table {
   border-collapse: collapse;
   width: 100%;
-  background-color: #f3ebf6;
+  /* background-color: #f3ebf6; */
 }
 
 #dark table {
@@ -420,19 +420,27 @@ td {
     overflow-y: auto;
   }
 
+  /* .template-id,
   .mission-name,
   .missions-completed,
-  .mission-time-left {
+  .mission-time-left,
+  .mission-cost-gold,
+  .mission-cost-wax,
+  .mission-reward,
+  .mission-pure-profit {
     padding: 8px 15px;
     width: auto;
-  }
+  } */
 
   .template-id,
   .level {
     width: 60px;
   }
 
-  .missions-completed,
+  .missions-completed {
+    width: 100px;
+  }
+
   .mission-reward,
   .mission-cost-wax {
     width: 90px;
@@ -447,6 +455,6 @@ td {
   }
 
   .mission-name {
-    width: 145px;
+    width: 142px;
   }
 }
