@@ -35,7 +35,6 @@ function App() {
     const interval = setInterval(async () => {
       const data = await fetchData()
       setData(data)
-      //console.log(data)
     }, 60000)
 
     return () => clearInterval(interval)

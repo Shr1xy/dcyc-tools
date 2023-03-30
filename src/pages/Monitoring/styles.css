@@ -221,7 +221,7 @@
 }
 
 .assets .asset {
-  border: 1px dashed grey;
+  border-bottom: 1px dashed grey;
 }
 
 #light table {
