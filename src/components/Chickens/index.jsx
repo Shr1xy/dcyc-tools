@@ -127,9 +127,9 @@ export const Chickens = (props) => {
       <div className="chickens__selectors">
         <Selector className="rarity" label="Rarity: " options={rarityOptions} onChange={handleRarityChange} value={rarity} />
         <Selector className="class" label="Class: " options={classOptions} onChange={handleClassLevelChange} value={classLevel} />
-        <Input label="Level: " value={minLvl} onChange={handleMinLvlChange} type="number" min="0" />
+        <Input label="Level: " value={minLvl} onChange={handleMinLvlChange} type="number" min="0" max="199" step="1" />
         <span>-</span>
-        <Input value={maxLvl} onChange={handleMaxLvlChange} type="number" max="200" />
+        <Input value={maxLvl} onChange={handleMaxLvlChange} type="number" min="1" max="200" step="1" />
       </div>
       <div className="chickens__info">
         <div className="upgrade">

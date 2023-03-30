@@ -56,18 +56,21 @@ export const fetchAssets = async (account) => {
       const minutes = Math.floor(timeLeft / 1000 / 60) % 60
       const hours = Math.floor(timeLeft / 1000 / 60 / 60)
 
-      allCostGold.push(Number(parsedResponseMissions.rows[0]?.mission_cost[0]?.quantity.split(' ')[0] * 8).toFixed(3))
+      allCostGold.push(parsedResponseMissions.rows[0]?.mission_cost[0] ? Number(parsedResponseMissions.rows[0]?.mission_cost[0]?.quantity.split(' ')[0] * 8).toFixed(3) : Number(0).toFixed(3))
       allCostWax.push(parsedResponseMissions.rows[0]?.mission_cost[1] ? Number(parsedResponseMissions.rows[0]?.mission_cost[1]?.quantity.split(' ')[0] * 8).toFixed(3) : Number(0).toFixed(3))
-      allRewards.push(Number(parsedResponseMissions.rows[0]?.mission_reward_success[0]?.quantity.split(' ')[0] * 8).toFixed(3))
-      pureProfit.push(Number(parsedResponseMissions.rows[0]?.mission_reward_success[0]?.quantity.split(' ')[0] * 8).toFixed(3) - Number(parsedResponseMissions.rows[0]?.mission_cost[0]?.quantity.split(' ')[0] * 8).toFixed(3))
+      allRewards.push(parsedResponseMissions.rows[0]?.mission_reward_success[0] ? Number(parsedResponseMissions.rows[0]?.mission_reward_success[0]?.quantity.split(' ')[0] * 8).toFixed(3) : Number(0).toFixed(3))
+      pureProfit.push(
+        (parsedResponseMissions.rows[0]?.mission_reward_success[0] ? Number(parsedResponseMissions.rows[0]?.mission_reward_success[0]?.quantity.split(' ')[0] * 8).toFixed(3) : Number(0).toFixed(3)) -
+          (parsedResponseMissions.rows[0]?.mission_cost[0] ? Number(parsedResponseMissions.rows[0]?.mission_cost[0]?.quantity.split(' ')[0] * 8).toFixed(3) : Number(0).toFixed(3))
+      )
 
       const obj = {
         template_id: parsedResponseMissions.rows[0]?.allowlist[0][0]?.template_id,
         level: parsedResponseMissions.rows[0]?.allowlist[0][0]?.level_req,
         mission_name: parsedResponseMissions.rows[0]?.info[0]?.value,
-        mission_cost_gold: Number(parsedResponseMissions.rows[0]?.mission_cost[0]?.quantity.split(' ')[0] * 8).toFixed(3),
+        mission_cost_gold: parsedResponseMissions.rows[0]?.mission_cost[0] ? Number(parsedResponseMissions.rows[0]?.mission_cost[0]?.quantity.split(' ')[0] * 8).toFixed(3) : Number(0).toFixed(3),
         mission_cost_wax: parsedResponseMissions.rows[0]?.mission_cost[1] ? Number(parsedResponseMissions.rows[0]?.mission_cost[1]?.quantity.split(' ')[0] * 8).toFixed(3) : Number(0).toFixed(3),
-        mission_reward: Number(parsedResponseMissions.rows[0]?.mission_reward_success[0]?.quantity.split(' ')[0] * 8).toFixed(3),
+        mission_reward: parsedResponseMissions.rows[0]?.mission_reward_success[0] ? Number(parsedResponseMissions.rows[0]?.mission_reward_success[0]?.quantity.split(' ')[0] * 8).toFixed(3) : Number(0).toFixed(3),
         missions_completed: item.completed_missions.length,
         time_left:
           timeLeft > 0

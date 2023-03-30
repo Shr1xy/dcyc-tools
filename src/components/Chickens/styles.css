@@ -72,7 +72,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
+  width: 380px;
   min-height: 120px;
   gap: 0.5rem;
 }
@@ -86,14 +86,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
+  width: 380px;
   min-height: 120px;
   gap: 0.5rem;
 }
 
 .upgrade .info-row__name {
   display: inline-block;
-  flex-direction: row;
   text-align: center;
   width: 220px;
   padding: 5px;
@@ -101,7 +100,6 @@
 
 .upgrade .info-row__value {
   display: inline-block;
-  flex-direction: row;
   text-align: center;
   width: 85px;
   padding: 5px;
@@ -137,7 +135,6 @@
 
 .rewards .info-row__name {
   display: inline-block;
-  flex-direction: row;
   text-align: center;
   width: 350px;
   padding: 5px;
@@ -145,7 +142,6 @@
 
 .rewards .info-row__value {
   display: inline-block;
-  flex-direction: row;
   text-align: center;
   width: 75px;
   padding: 5px;
@@ -160,7 +156,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 700px;
+  width: 380px;
   min-height: 60px;
   gap: 0.5rem;
 }
@@ -174,14 +170,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 700px;
+  width: 380px;
   min-height: 60px;
   gap: 0.5rem;
 }
 
 .time-upgrade .info-row__name {
   display: inline-block;
-  flex-direction: row;
   text-align: center;
   width: 170px;
   padding: 5px;
@@ -189,7 +184,6 @@
 
 .time-upgrade .info-row__value {
   display: inline-block;
-  flex-direction: row;
   text-align: center;
   width: 165px;
   padding: 5px;
@@ -204,7 +198,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 700px;
+  width: 380px;
   min-height: 60px;
   gap: 0.5rem;
 }
@@ -218,14 +212,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 700px;
+  width: 380px;
   min-height: 60px;
   gap: 0.5rem;
 }
 
 .speedup .info-row__name {
   display: inline-block;
-  flex-direction: row;
   text-align: center;
   width: 220px;
   padding: 5px;
@@ -233,7 +226,6 @@
 
 .speedup .info-row__value {
   display: inline-block;
-  flex-direction: row;
   text-align: center;
   width: 80px;
   padding: 5px;

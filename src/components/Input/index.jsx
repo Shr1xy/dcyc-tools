@@ -2,8 +2,14 @@ import '../Input/styles.css'
 
 export const Input = ({ className, label, value, onChange, placeholder, min, max, type, step }) => {
   const handleChange = (e) => {
-    onChange(e.target.value)
+    const inputValue = e.target.value
+    const numericValue = inputValue.replace(/[^0-9]/g, '')
+
+    if (numericValue !== '') {
+      onChange(numericValue)
+    }
   }
+
   return (
     <div className="input">
       <label className="input__label">{label}</label>
