@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/dcyc-tools/static/css/main.efe21190.css",
-    "main.js": "/dcyc-tools/static/js/main.a995b92d.js",
+    "main.css": "/dcyc-tools/static/css/main.d62c8b9b.css",
+    "main.js": "/dcyc-tools/static/js/main.2b81d5ee.js",
+    "static/media/dcyc-gold.png": "/dcyc-tools/static/media/dcyc-gold.afa450d6937def3f1c58.png",
+    "static/media/dcyc-egg.png": "/dcyc-tools/static/media/dcyc-egg.9bb43358a13bffa23159.png",
     "index.html": "/dcyc-tools/index.html",
-    "main.efe21190.css.map": "/dcyc-tools/static/css/main.efe21190.css.map",
-    "main.a995b92d.js.map": "/dcyc-tools/static/js/main.a995b92d.js.map"
+    "main.d62c8b9b.css.map": "/dcyc-tools/static/css/main.d62c8b9b.css.map",
+    "main.2b81d5ee.js.map": "/dcyc-tools/static/js/main.2b81d5ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.efe21190.css",
-    "static/js/main.a995b92d.js"
+    "static/css/main.d62c8b9b.css",
+    "static/js/main.2b81d5ee.js"
   ]
 }
