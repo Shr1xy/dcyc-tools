@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dcyc-tools/static/css/main.1c0149ab.css",
-    "main.js": "/dcyc-tools/static/js/main.2b81d5ee.js",
+    "main.js": "/dcyc-tools/static/js/main.4cf6bedb.js",
     "static/media/dcyc-gold.png": "/dcyc-tools/static/media/dcyc-gold.afa450d6937def3f1c58.png",
     "static/media/dcyc-egg.png": "/dcyc-tools/static/media/dcyc-egg.9bb43358a13bffa23159.png",
     "index.html": "/dcyc-tools/index.html",
     "main.1c0149ab.css.map": "/dcyc-tools/static/css/main.1c0149ab.css.map",
-    "main.2b81d5ee.js.map": "/dcyc-tools/static/js/main.2b81d5ee.js.map"
+    "main.4cf6bedb.js.map": "/dcyc-tools/static/js/main.4cf6bedb.js.map"
   },
   "entrypoints": [
     "static/css/main.1c0149ab.css",
-    "static/js/main.2b81d5ee.js"
+    "static/js/main.4cf6bedb.js"
   ]
 }
