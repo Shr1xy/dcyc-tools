@@ -6,7 +6,11 @@ export const Input = ({ className, label, value, onChange, placeholder, min, max
     const numericValue = inputValue.replace(/[^0-9]/g, '')
 
     if (numericValue !== '') {
-      onChange(numericValue)
+      if (numericValue > 200) {
+        onChange(200)
+      } else {
+        onChange(parseInt(numericValue))
+      }
     }
   }
 

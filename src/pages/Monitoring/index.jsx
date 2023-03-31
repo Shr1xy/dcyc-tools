@@ -151,8 +151,8 @@ const Monitoring = (props) => {
           <p>Egg balance: {userBalance ? userBalance?.balanceEgg : '0.00'}</p>
           <span>_ _ _ _ _ _ _</span>
           <p>In-game wax: {userBalance ? userBalance?.inGameWax : '0.00'}</p>
-          <p>In game egg: {userBalance ? userBalance?.inGameEgg : '0.00'}</p>
-          <p>In game gold: {userBalance ? userBalance?.inGameGold : '0.00'}</p>
+          <p>In-game egg: {userBalance ? userBalance?.inGameEgg : '0.00'}</p>
+          <p>In-game gold: {userBalance ? userBalance?.inGameGold : '0.00'}</p>
         </div>
       </div>
       <div className="assets">
